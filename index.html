@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/styles.css">
   <title>ODS 9 - Contato</title>
 </head>
+
 <body>
   <header>
     <div class="fundo-laranja">
       <div class="container">
         <div class="flex-container">
-          <a href="index.html" ><img src="./assets/img/logo.png" alt=""></a>
+          <a href="index.html"><img src="./assets/img/logo.png" alt=""></a>
           <nav>
             <ul>
               <li><a href="index.html">ODS</a></li>
@@ -28,10 +30,6 @@
   <main>
     <div class="container-contato">
       <div class="form-flex-container">
-        <div class="contato-texto-container">
-          <img src="./assets/img/lamp.png" alt="">
-          <h1>Entre em contato para saber mais !</h1>
-        </div>
         <div>
           <div class="form-card">
             <form>
@@ -45,9 +43,15 @@
               <input type="text" name="profissao" id="profissao" placeholder="Profissão">
               <label for="mensagem">Mensagem</label>
               <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
-              <button type="submit" class="btn-enviar">Enviar</button>
+              <button type="submit" id="botao-enviar" class="btn-enviar">Enviar</button>
+              <button id="botao-limpar" class="btn-limpar">Limpar</button>
             </form>
           </div>
+        </div>
+        <div class="conteudo-lista">
+          <h1>Lista</h1>
+          <ul class="lista">
+          </ul>
         </div>
       </div>
     </div>
@@ -59,7 +63,7 @@
         <img src="./assets/img/logo_azul.png" alt="">
       </div>
       <div style="margin-top: 30px;">
-        <h1 >Contato</h1>
+        <h1>Contato</h1>
         <ul class="contato-lista">
           <li>43 991768912</li>
           <li>ods9@gmail.com</li>
@@ -76,6 +80,8 @@
       </div>
     </div>
   </footer>
-  
+
+  <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
