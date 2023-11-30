@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>ODS 9 - Contato</title>
+</head>
+
+<body>
+  <header>
+    <div class="fundo-laranja">
+      <div class="container">
+        <div class="flex-container">
+          <a href="index.html"><img src="./assets/img/logo.png" alt=""></a>
+          <nav>
+            <ul>
+              <li><a href="index.html">ODS</a></li>
+              <li><a href="index.html">Inovação</a></li>
+              <li><a href="index.html">Infraestrutura</a></li>
+              <li><a href="index.html">Indústria</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-contato">
+      <div class="form-flex-container">
+        <div>
+          <div class="form-card">
+            <form>
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name" placeholder="Seu nome">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="usuario@gmail.com">
+              <label for="telefone">Telefone</label>
+              <input type="tel" name="telefone" id="telefone" placeholder="(43) 99999-9999">
+              <label for="profissao">Profissão</label>
+              <input type="text" name="profissao" id="profissao" placeholder="Profissão">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+              <button type="submit" id="botao-enviar" class="btn-enviar">Enviar</button>
+              <button id="botao-limpar" class="btn-limpar">Limpar</button>
+              <button id="botao-resetar" class="btn-limpar">Resetar</button>
+            </form>
+          </div>
+        </div>
+        <div class="conteudo-lista">
+          <div class="caixa-pesquisa">
+            <div class="pesquisa-container">
+              <div class="pesquisa">
+                <input type="search" id="tarefa" placeholder="Escreva aqui...">
+                <button id="botao-pesquisar" class="pesquisaBtn">Pesquisar</button>
+              </div>
+            </div>
+          </div>
+          <h1>Lista</h1>
+          <ul class="lista">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="rodape fundo-laranja">
+      <div>
+        <img src="./assets/img/logo_azul.png" alt="">
+      </div>
+      <div style="margin-top: 30px;">
+        <h1>Contato</h1>
+        <ul class="contato-lista">
+          <li>43 991768912</li>
+          <li>ods9@gmail.com</li>
+        </ul>
+      </div>
+      <div style="margin-top: 30px;">
+        <h1>Seções</h1>
+        <ul class="ods9">
+          <li>ODS</li>
+          <li>Inovação</li>
+          <li>infraestrutura</li>
+          <li>industria</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
