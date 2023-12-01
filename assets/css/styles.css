@@ -234,6 +234,7 @@ footer div ul .ods9 {
   font-size: 36px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contato-lista {
@@ -414,4 +415,17 @@ caixa-pesquisa {
   background-color: #ff6a24;
   color: #fff;
   font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .form-card {
+    max-width: 350px;
+  }
+  .form-card input {
+    max-width: 200px;
+  }
+
+  .form-card textarea {
+    max-width: 200px;
+  }
 }
