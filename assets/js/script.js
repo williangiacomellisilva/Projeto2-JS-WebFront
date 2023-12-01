@@ -8,7 +8,6 @@ const telefoneForm = document.querySelector("#telefone");
 const profissaoForm = document.querySelector("#profissao");
 const mensagemForm = document.querySelector("#mensagem");
 const listaHTML = document.querySelector(".lista");
-const janela = document.querySelector("window");
 let lista = [];
 
 function handleForm(event) {
@@ -68,8 +67,7 @@ function handleLimpar(event) {
 }
 
 function renderizarLista(itemObjeto) {
-  console.log(itemObjeto);
-  listaHTML.inner = "";
+  listaHTML.innerHTML = "";
   itemObjeto.forEach((itemLista, index) => {
     let li = document.createElement("li");
     let h5 = document.createElement("h5");
@@ -105,9 +103,12 @@ function renderizarLista(itemObjeto) {
 function loadPagina() {
   const listaLocal = localStorage.getItem("lista");
   const listaObjetoLocal = JSON.parse(listaLocal);
-  console.log(listaObjetoLocal);
 
-  if (listaLocal.length > 0) {
+  if (
+    listaObjetoLocal &&
+    Array.isArray(listaObjetoLocal) &&
+    listaObjetoLocal.length > 0
+  ) {
     renderizarLista(listaObjetoLocal);
   }
 }
